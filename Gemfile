@@ -32,6 +32,9 @@ gem 'jbuilder'
 # Use Redis adapter to run Action Cable in production
 gem 'redis', '~> 4.0'
 
+# Rubyzip gem
+gem 'rubyzip', '~> 2.3.x'
+
 # Use Kredis to get higher-level data types in Redis [https://github.com/rails/kredis]
 # gem "kredis"
 

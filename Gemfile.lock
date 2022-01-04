@@ -239,6 +239,7 @@ DEPENDENCIES
   redis (~> 4.0)
   rubocop
   rubocop-rails
+  rubyzip (~> 2.3.x)
   selenium-webdriver
   sprockets-rails
   stimulus-rails
