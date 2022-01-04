@@ -60,6 +60,5 @@ jobs:
         DATABASE_URL: postgres://postgres:password@localhost:5432/test
         PG_USER: postgres
       run: |
-        bin/rails db:create
         bin/rails db:test:prepare
         bin/rails test
