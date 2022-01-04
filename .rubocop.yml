@@ -13,6 +13,7 @@ AllCops:
   NewCops: enable
   Exclude:
     - 'bin/bundle'
+    - 'vendor/**/*.rb' # or vendor/bundle/**/*
 
 Metrics/MethodLength:
   Max: 40
