@@ -16,6 +16,8 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
+        env:
+          RAILS_ENV: test
 
       - name: Setup Ruby and install gems
         uses: ruby/setup-ruby@473e4d8fe5dd94ee328fdfca9f8c9c7afc9dae5e
@@ -23,6 +25,8 @@ jobs:
           bundler-cache: true
       # Add or Replace any other security checks here
       - name: Run security checks
+        env:
+          RAILS_ENV: test
         run: |
           bin/bundler-audit --update
           bin/brakeman -q -w2
