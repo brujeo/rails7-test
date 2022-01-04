@@ -13,7 +13,7 @@ AllCops:
   NewCops: enable
   Exclude:
     - bin/bundle
-    - gemfiles/vendor/bundle/**/*
+    - vendor/bundle/**/*
 
 Metrics/MethodLength:
   Max: 40
