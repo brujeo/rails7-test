@@ -23,9 +23,9 @@ jobs:
     steps:
       - uses: actions/checkout@v1
       - name: Setup Ruby
-        uses: actions/setup-ruby@v1
+        uses: ruby/setup-ruby@473e4d8fe5dd94ee328fdfca9f8c9c7afc9dae5e
         with:
-          ruby-version: 3.0.3
+          ruby-version: 3.0.0
       - name: Build and run tests
         env:
           DATABASE_URL: postgres://postgres:password@localhost:5432/rails7_test_test
