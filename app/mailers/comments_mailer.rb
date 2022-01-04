@@ -1,5 +1,4 @@
 class CommentsMailer < ApplicationMailer
-
   # Subject can be set in your I18n file at config/locales/en.yml
   # with the following lookup:
   #
@@ -8,6 +7,6 @@ class CommentsMailer < ApplicationMailer
   def submitted(comment)
     @comment = comment
 
-    mail to: "blog-owner@example.org", subject: "New comment!" 
+    mail to: 'blog-owner@example.org', subject: 'New comment!'
   end
 end
