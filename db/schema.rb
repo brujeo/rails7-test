@@ -12,6 +12,9 @@
 
 ActiveRecord::Schema.define(version: 2021_12_19_151306) do
 
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
+
   create_table "action_text_rich_texts", force: :cascade do |t|
     t.string "name", null: false
     t.text "body"
@@ -51,7 +54,7 @@ ActiveRecord::Schema.define(version: 2021_12_19_151306) do
   end
 
   create_table "comments", force: :cascade do |t|
-    t.integer "post_id", null: false
+    t.bigint "post_id", null: false
     t.text "content"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
