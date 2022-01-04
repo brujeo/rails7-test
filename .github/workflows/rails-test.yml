@@ -22,7 +22,7 @@ jobs:
 
     steps:
       - uses: actions/checkout@v1
-      - name: Setup Ruby
+      - name: Setup Ruby 
         uses: actions/setup-ruby@v1
         with:
           ruby-version: 3.0.3
