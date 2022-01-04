@@ -1,5 +1,6 @@
 # frozen_string_literal: true
 
+# Comments controller class
 class CommentsController < ApplicationController
   before_action :set_post
 
