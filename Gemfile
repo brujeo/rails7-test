@@ -57,6 +57,12 @@ group :development, :test do
 
   # A static analysis security vulnerability scanner for Ruby on Rails applications
   gem "brakeman"
+
+  # A Ruby static code analyzer and formatter, based on the community Ruby style guide.
+  gem "rubocop"
+
+  # A RuboCop extension focused on enforcing Rails best practices and coding conventions.
+  gem "rubocop-rails"
 end
 
 group :development do
