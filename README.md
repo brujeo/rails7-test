@@ -42,3 +42,19 @@ git commit -m "Added the platform"
 
 ** Project Live
 https://stark-spire-67923.herokuapp.com/
+
+
+* Setting up new environment
+
+** PostgresQL
+heroku addons:create heroku-postgresql:hobby-dev -a brujeo-rails7test-production
+heroku run rake db:create -a brujeo-rails7test-production
+
+** Redis
+heroku addons:create heroku-redis:hobby-dev -a brujeo-rails7test-production
+
+** BASH connect
+heroku run bash -a brujeo-rails7test-production
+
+** RAILS connect
+heroku run rails c -a brujeo-rails7test-production
