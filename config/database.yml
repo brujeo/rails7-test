@@ -80,7 +80,4 @@ test:
 # for a full overview on how database connection configuration can be specified.
 #
 production:
-  <<: *default
-  database: rails7_test_production
-  username: rails7_test
-  password: <%= ENV["RAILS7_TEST_DATABASE_PASSWORD"] %>
+  url: <%= ENV["DATABASE_URL"] %>
