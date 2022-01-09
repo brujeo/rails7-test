@@ -42,4 +42,3 @@ git commit -m "Added the platform"
 
 ** Project Live
 https://stark-spire-67923.herokuapp.com/
-
